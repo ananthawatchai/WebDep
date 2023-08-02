@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <label for="name">ชื่อเต็ม/ย่อของสาขาวิชา :</label>
+        <input 
+        type="text"
+        name="name"
+        placeholder=""
+        pattern="[A-Z]{1,5}\[A-Z]{1,15}"
+        >
+        <br><br>
+        
+        <label for="money">จำนวนเงินที่จะโอน :</label>
+        <input 
+        type="number"
+        name="money"
+        placeholder=""
+        pattern="\d{1,3}(,\d{3})*(\.\d+)?$"
+        ><br><br>
+ 
+        <label for="ffood">อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย :</label><br><br>
+        <textarea 
+        name=""
+        cols="30"
+        rows="7"
+        name="ffood"
+        placeholder=""
+        pattern="[A-Z]{1,5}\[A-Z]{1,15}"
+        >
+        </textarea>
+        <br>
+        <br>
+
+        <label for="money">ค่าไฟ 3 เดือนที่ผ่านมา :</label>
+        <input 
+        type="number"
+        name="bill"
+        placeholder=""
+        pattern="\d{1,3}(,\d{3})*(\.\d+)?$"><br><br>
+
+        <label for="ID">รหัสบัตรประชาชน :</label>
+        <input 
+        type="text"
+        name="ID"
+        placeholder=""
+        pattern="[0-9]{1}-[0-9]{4}-[0-9]{5}-[0-9]{2}-[0-1]{1}"
+        ><br><br>
+
+        <label for="star">ความพึงพอใจของหนังสือเล่มนี้ :</label>
+        <input type="radio"  name="satisfaction" value="ดีมาก">
+        <label for="">ดีมาก</label>
+
+        <input type="radio"  name="satisfaction" value="ดี">
+        <label for="">ดี</label>
+
+        <input type="radio"  name="satisfaction" value="พอใช้">
+        <label for="">พอใช้</label>
+
+        <input type="radio"  name="satisfaction" value="แย่">
+        <label for="">แย่</label>
+
+        <input type="radio"  name="satisfaction" value="แย่มาก">
+        <label for="">แย่มาก</label>
+        <br>
+        <br>
+        
+        <label for="sick">อาการป่วย :</label><br><br>
+        <textarea name="" id="sick" cols="30" rows="10"></textarea><br>
+        <input type="checkbox" name="sick" value="เจ็บคอ">
+        <label for="sick">มีไข้</label>
+        <input type="checkbox" name="sick" value="ปวดหัว">
+        <label for="sick">ปวดหัว</label>
+        <input type="checkbox" name="sick" value="มีไข้">
+        <label for="sick">มีน้ำมูก</label>
+        <input type="checkbox" name="sick" value="มีเสมหะ">
+        <label for="sick">มีเสมหะ</label>
+        <input type="checkbox" name="sick" value="มีน้ำมูก">
+        <label for="sick">ไม่มีอาการ  </label><br><br>
+
+        <label for="">ในช่วง 3 เดือน เคยได้รับวัคซีนหรือไม่ :</label> 
+        <input type="radio" name="get" value="เคย">
+        <label for="">เคย</label>
+        <input type="radio" name="get" value="ไม่เตย">
+        <label for="">ไม่เคย</label><br><br>
+
+        <Label for="password">รหัสผ่าน</Label>
+        <input type="password" id="password"><br><br>
+
+        <label for="timestart-end">เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน :</label>
+        <br>
+        <br>
+        <label>เวลาเริ่มเข้าเรียน</label>
+        <input type="time" id="class" name="class" value="09:00">
+        <br><br>
+        <label>เวลาสิ้นการเรียน</label>
+        <input type="time" id="class" name="class" value="17:00"><br><br>
+
+        <Label>วันเวลาที่ต้องไปพบแพทย์</Label>
+        <input type="datetime-local" id="mtime" name="mtime" value=""><br><br>
+
+        <input type="submit" value="Submit"> 
+        
+    </form>  
+</body>
+</html>
